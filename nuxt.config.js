@@ -71,12 +71,12 @@ export default {
 
    // Axios module configuration (https://go.nuxtjs.dev/config-axios)
    axios: {
-    baseURL: process.env.AXIOS_BASE_URL 
+    baseURL: "http://177.71.174.160:3001/api"
   },
   env:{
-   mqtt_prefix: process.env.MQTT_PREFIX,
-   mqtt_host: process.env.MQTT_HOST,
-   mqtt_port: process.env.MQTT_PORT
+   mqtt_prefix: "ws://",
+   mqtt_host: "177.71.174.160",
+   mqtt_port: 8083
   },
 
   server: {

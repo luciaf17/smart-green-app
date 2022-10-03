@@ -277,7 +277,7 @@ async function getDeviceMqttCredentials(dId, userId) {
 function startMqttClient() {
   const options = {
     port: 1883,
-    host: "54.233.240.79",
+    host: "177.71.174.160",
     clientId:
       "webhook_superuser" + Math.round(Math.random() * (0 - 10000) * -1),
     username: "superuser",
@@ -290,7 +290,7 @@ function startMqttClient() {
     encoding: "utf8"
   };
 
-  client = mqtt.connect("mqtt://54.233.240.79", options);
+  client = mqtt.connect("mqtt://177.71.174.160", options);
 
   client.on("connect", function() {
     console.log("MQTT CONNECTION -> SUCCESS;".green);

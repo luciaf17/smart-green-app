@@ -104,7 +104,7 @@ export default {
       sidebarBackground: "primary", //vue|blue|orange|green|red|primary
       client: null,
       options: {
-        host: "54.233.240.79",
+        host: "177.71.174.160",
         port: 8083,
         endpoint: "/mqtt",
         clean: true,
