@@ -26,8 +26,8 @@ app.use("/api", require("./routes/dataprovider.js"));
 module.exports = app;
 
 //listener
-app.listen(process.env.API_PORT, () => {
-    console.log('Server on port ' + process.env.API_PORT.green);
+app.listen(3001, () => {
+    console.log('Server on port 3001');
 });
 
 //endpoint test
@@ -36,11 +36,11 @@ app.get("/testing", (req, res) => {
 });
 
 //mongo connection
-const mongoUserName = process.env.MONGO_USERNAME;
-const mongoPassword = process.env.MONGO_PASSWORD;
-const mongoHost = process.env.MONGO_HOST;
-const mongoPort = process.env.MONGO_PORT;
-const mongoDataBase = process.env.MONGO_DATABASE;
+const mongoUserName = "devuser";
+const mongoPassword = "devpassword";
+const mongoHost = "177.71.174.160";
+const mongoPort = 27017;
+const mongoDataBase = "smart-green";
 
 const mongoUri = `mongodb://${mongoUserName}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDataBase}`;
 

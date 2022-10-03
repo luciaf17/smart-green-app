@@ -104,7 +104,7 @@ async function createResources() {
             "config": {
                 url: "http://177.71.174.160:3001/api/saver-webhook",
                 headers: {
-                    token: process.env.EMQX_API_TOKEN
+                    token: "121212"
                 },
                 method: "POST"
             },
@@ -116,7 +116,7 @@ async function createResources() {
             "config": {
                 url: "http://177.71.174.160:3001/api/alarm-webhook",
                 headers: {
-                    token: process.env.EMQX_API_TOKEN
+                    token: "121212"
                 },
                 method: "POST"
             },
@@ -187,6 +187,6 @@ global.check_mqtt_superuser = async function checkMqttSuperUser(){
 
 setTimeout(() => {
   listResources();
-}, process.env.EMQX_RESOURCES_DELAY);
+}, 30000);
 
 module.exports = router;
